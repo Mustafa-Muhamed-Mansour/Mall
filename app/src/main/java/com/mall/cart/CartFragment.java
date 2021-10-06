@@ -16,7 +16,7 @@ import android.view.ViewGroup;
 
 import com.mall.databinding.CartFragmentBinding;
 
-public class cartFragment extends Fragment
+public class CartFragment extends Fragment
 {
 
     private CartFragmentBinding binding;

@@ -1,7 +1,7 @@
-package com.mall.home;
+package com.mall.register;
 
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
-    // TODO: Implement the ViewModel
+public class RegisterViewModel extends ViewModel
+{
 }

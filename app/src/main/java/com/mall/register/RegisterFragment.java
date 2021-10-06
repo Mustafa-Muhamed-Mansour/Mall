@@ -1,4 +1,4 @@
-package com.mall.home;
+package com.mall.register;
 
 import androidx.lifecycle.ViewModelProvider;
 
@@ -7,32 +7,47 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.mall.R;
+import com.mall.databinding.RegisterFragmentBinding;
 
-public class HomeFragment extends Fragment {
+public class RegisterFragment extends Fragment
+{
 
-    private HomeViewModel mViewModel;
+    private RegisterFragmentBinding binding;
+    private NavController navController;
+    private RegisterViewModel registerViewModel;
 
-    public static HomeFragment newInstance() {
-        return new HomeFragment();
-    }
-
-    @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.home_fragment, container, false);
-    }
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
-        // TODO: Use the ViewModel
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
+    {
+        binding = RegisterFragmentBinding.inflate(inflater, container, false);
+        return binding.getRoot();
     }
 
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState)
+    {
+        super.onViewCreated(view, savedInstanceState);
+
+        navController = Navigation.findNavController(view);
+        registerViewModel = new ViewModelProvider(requireActivity()).get(RegisterViewModel.class);
+
+        binding.btnRegister.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                navController.navigate(R.id.action_registerFragment_to_homeFragment);
+            }
+        });
+    }
 }

@@ -1,4 +1,4 @@
-package com.account;
+package com.mall.account;
 
 import androidx.lifecycle.ViewModelProvider;
 

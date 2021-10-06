@@ -1,7 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-</LinearLayout>
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/item_img_product"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_margin="@dimen/_3sdp" />
+
+            <TextView
+                android:id="@+id/item_txt_title_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_16ssp"
+                android:textColor="@color/black"
+                android:layout_margin="@dimen/_3sdp"
+                android:padding="@dimen/_5sdp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_txt_description_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp" />
+
+        <TextView
+            android:id="@+id/item_txt_price_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_11ssp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_margin="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp" />
+
+    </LinearLayout>
+</layout>

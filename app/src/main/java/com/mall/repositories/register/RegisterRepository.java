@@ -1,2 +1,5 @@
-package com.mall.repositories.register;public class RegisterRepository {
+package com.mall.repositories.register;
+
+public class RegisterRepository
+{
 }
