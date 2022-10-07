@@ -1,4 +1,4 @@
-# Screen shot
+# The user can buy or order what he wants and also view his basket of orders as well as modify his profile
 
 <img src = "https://user-images.githubusercontent.com/53982895/136988492-2d9d1556-1299-40a4-ae2a-00f6aa867fb4.png" width = "200" height = "400"> <img src = "https://user-images.githubusercontent.com/53982895/136988515-b48c469a-6cee-4170-9c95-be440a6acdd8.png" width = "200" height = "400"> 
 <img src = "https://user-images.githubusercontent.com/53982895/136988552-50371873-b949-45a4-8017-08eb2d476bdf.png" width = "200" height = "400"> <img src = "https://user-images.githubusercontent.com/53982895/136988573-5ddd9144-3263-415a-939c-e7a286754645.png" width = "200" height = "400">
